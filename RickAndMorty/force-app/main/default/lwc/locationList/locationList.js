@@ -38,4 +38,3 @@ export default class LocationList extends NavigationMixin(LightningElement) {
         });
     }
 }
-
