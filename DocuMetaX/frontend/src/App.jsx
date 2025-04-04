@@ -1,35 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './index.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    <div className="min-h-screen bg-[#0B9DDA] text-white flex flex-col items-center justify-center px-4">
+      <h1 className="text-5xl font-bold mb-4 text-center">DocuMetaX</h1>
+      <p className="text-xl text-center mb-6 max-w-xl">
+        Generate professional Salesforce documentation in seconds. Flows, Apex, Metadata, Validation Rules and more — all in one place.
       </p>
-    </>
+      <a
+        href="#"
+        className="bg-white text-[#0B9DDA] px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100 transition"
+      >
+        Try it now
+      </a>
+    </div>
   )
 }
 
 export default App
+
